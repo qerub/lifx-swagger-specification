@@ -8,6 +8,11 @@ produces:
 host: api.lifx.com
 schemes:
   - https
+securityDefinitions:
+  authorization:
+    name: Authorization
+    type: apiKey
+    in: header
 tags:
   - name: v1
     description: Operations about v1s
@@ -24,6 +29,8 @@ paths:
       tags:
         - v1
       operationId: getV1Lights
+      security:
+        - authorization: []
   /v1/lights/states:
     put:
       summary: Sets multiple light states
@@ -94,6 +101,8 @@ paths:
       tags:
         - v1
       operationId: putV1LightsStates
+      security:
+        - authorization: []
   '/v1/lights/{selector}':
     get:
       summary: Returns light(s) based on selector
@@ -117,6 +126,8 @@ paths:
       tags:
         - v1
       operationId: getV1LightsSelector
+      security:
+        - authorization: []
   '/v1/lights/{selector}/state':
     put:
       summary: Set light(s) state
@@ -164,6 +175,8 @@ paths:
       tags:
         - v1
       operationId: putV1LightsSelectorState
+      security:
+        - authorization: []
   '/v1/lights/{selector}/toggle':
     post:
       summary: Toggle light(s) power state.
@@ -191,6 +204,8 @@ paths:
       tags:
         - v1
       operationId: postV1LightsSelectorToggle
+      security:
+        - authorization: []
   '/v1/lights/{selector}/cycle':
     post:
       summary: Cycle light(s) through states
@@ -268,6 +283,8 @@ paths:
       tags:
         - v1
       operationId: postV1LightsSelectorCycle
+      security:
+        - authorization: []
   '/v1/lights/{selector}/effects/breathe':
     post:
       summary: Perform a breathe effect on light(s)
@@ -346,6 +363,8 @@ paths:
       tags:
         - v1
       operationId: postV1LightsSelectorEffectsBreathe
+      security:
+        - authorization: []
   '/v1/lights/{selector}/effects/pulse':
     post:
       summary: Perform a pulse effect on light(s)
@@ -424,6 +443,8 @@ paths:
       tags:
         - v1
       operationId: postV1LightsSelectorEffectsPulse
+      security:
+        - authorization: []
   /v1/scenes:
     get:
       produces:
@@ -434,6 +455,8 @@ paths:
       tags:
         - v1
       operationId: getV1Scenes
+      security:
+        - authorization: []
   '/v1/scenes/{selector}/activate':
     put:
       summary: Activate a scene
@@ -459,6 +482,8 @@ paths:
       tags:
         - v1
       operationId: putV1ScenesSelectorActivate
+      security:
+        - authorization: []
   /v1/color:
     get:
       summary: 'Parse a color string and return hue, saturation, brightness and kelvin values'
@@ -477,6 +502,8 @@ paths:
       tags:
         - v1
       operationId: getV1Color
+      security:
+        - authorization: []
 definitions:
   putV1ScenesSelectorActivate:
     type: object

@@ -518,8 +518,6 @@ definitions:
         type: number
         format: float
         description: Duration in seconds. Defaults to 1.0
-      ignore:
-        type: '[String]'
     description: Activate a scene
   putV1ScenesSelectorActivateOverride:
     type: object

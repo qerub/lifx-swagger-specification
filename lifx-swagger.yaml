@@ -6,6 +6,8 @@ info:
 produces:
   - application/json
 host: api.lifx.com
+schemes:
+  - https
 tags:
   - name: v1
     description: Operations about v1s

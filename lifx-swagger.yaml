@@ -13,9 +13,6 @@ securityDefinitions:
     name: Authorization
     type: apiKey
     in: header
-tags:
-  - name: v1
-    description: Operations about v1s
 paths:
   /v1/lights:
     get:

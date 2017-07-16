@@ -38,7 +38,7 @@ paths:
       produces:
         - application/json
       consumes:
-        - application/json
+        - application/x-www-form-urlencoded
       parameters:
         - in: formData
           name: 'states[][selector]'
@@ -135,7 +135,7 @@ paths:
       produces:
         - application/json
       consumes:
-        - application/json
+        - application/x-www-form-urlencoded
       parameters:
         - in: path
           name: selector
@@ -184,7 +184,7 @@ paths:
       produces:
         - application/json
       consumes:
-        - application/json
+        - application/x-www-form-urlencoded
       parameters:
         - in: path
           name: selector
@@ -213,7 +213,7 @@ paths:
       produces:
         - application/json
       consumes:
-        - application/json
+        - application/x-www-form-urlencoded
       parameters:
         - in: path
           name: selector
@@ -292,7 +292,7 @@ paths:
       produces:
         - application/json
       consumes:
-        - application/json
+        - application/x-www-form-urlencoded
       parameters:
         - in: path
           name: selector
@@ -372,7 +372,7 @@ paths:
       produces:
         - application/json
       consumes:
-        - application/json
+        - application/x-www-form-urlencoded
       parameters:
         - in: path
           name: selector

@@ -1,7 +1,8 @@
-info:
-  title: API title
-  version: 0.0.1
 swagger: '2.0'
+info:
+  title: LIFX HTTP Remote Control API
+  version: v1
+  description: https://api.developer.lifx.com/
 produces:
   - application/json
 host: api.lifx.com

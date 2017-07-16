@@ -59,7 +59,7 @@ paths:
           name: 'states[][brightness]'
           type: array
           items:
-            type: float
+            format: float
           required: false
         - in: formData
           name: 'states[][color]'
@@ -71,7 +71,7 @@ paths:
           name: 'states[][duration]'
           type: array
           items:
-            type: float
+            format: float
           required: false
         - in: formData
           name: 'defaults[power]'
@@ -233,7 +233,7 @@ paths:
           name: 'states[][brightness]'
           type: array
           items:
-            type: float
+            format: float
           required: false
         - in: formData
           name: 'states[][color]'
@@ -245,7 +245,7 @@ paths:
           name: 'states[][duration]'
           type: array
           items:
-            type: float
+            format: float
           required: false
         - in: formData
           name: 'defaults[power]'
